@@ -1,0 +1,80 @@
+.sideImg {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  position: sticky;
+}
+
+.side-part {
+  padding: 0px;
+  position: relative;
+}
+.upImg {
+  height: auto;
+  width: 100%;
+}
+.secondSide {
+  padding: 0px;
+}
+@media (max-width: 992px) {
+  .upImg {
+    padding-left: 10px;
+  }
+}
+.thisSummer {
+  padding-top: 32px;
+  padding-left: 15px;
+}
+.thisSummerContent {
+  padding: 10px;
+}
+.h1 {
+  padding-left: 40px;
+  text-align: start;
+}
+.p1 {
+  padding-left: 40px;
+  text-align: start;
+}
+@media (max-width: 992px) {
+  .h1,
+  .p1 {
+    padding-left: 10px;
+  }
+}
+.side-part .btn-1 {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  font-size: 0.8rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid;
+  border-radius: 40px;
+  text-align: center;
+}
+.btn-1:hover {
+  background: hsla(0, 0%, 100%, 0.12);
+}
+.btn-2 {
+  font-size: 0.8rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: rgb(0 130 72);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid;
+  border-radius: 40px;
+  text-align: center;
+}

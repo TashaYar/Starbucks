@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.Main {
+  color: white;
+}
+
+#Main {
+  color: red;
+}
+.Navbar {
+  height: 100px;
+}
+img {
+  height: 50px;
+  width: auto;
+}
+
+.primary-navigation {
+  display: flex;
+  align-items: center;
+}
+.secondary-navigation {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 70px;
+}
+
+.navLink1 {
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  position: relative;
+  display: flex;
+  transition: color 0.2s ease-in-out;
+  font-size: 0.9rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+}
+
+.navLink {
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease-in-out;
+  font-size: 0.8rem;
+
+  font-weight: bold;
+}
+
+.sign-in-button {
+  background-color: white;
+  color: black;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid;
+  position: relative;
+  display: flex;
+  transition: color 0.2s ease-in-out;
+  font-size: 0.8rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.join-button {
+  background-color: black;
+  color: white;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid;
+  position: relative;
+  display: flex;
+  transition: color 0.2s ease-in-out;
+  font-size: 0.8rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  text-decoration: none !important;
+  border-radius: 40px;
+}
+@media (max-width: 992px) {
+  .secondary-navigation {
+    padding-right: 0;
+  }
+}
