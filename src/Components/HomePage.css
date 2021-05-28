@@ -1,15 +1,17 @@
 .sideImg {
-  height: 100%;
+  max-width: 100%;
   width: 100%;
+  height: auto;
+  min-height: 101vh;
   top: 0;
   left: 0;
-
-  position: sticky;
+  position: relative;
 }
 
 .side-part {
   padding: 0px;
-  position: relative;
+  position: fixed;
+  left: 0;
 }
 .upImg {
   height: auto;
@@ -17,37 +19,74 @@
 }
 .secondSide {
   padding: 0px;
+  margin-left: 33.1%;
+  background-color: rgb(247 247 247);
 }
+
 @media (max-width: 992px) {
+  .secondSide {
+    padding: 0px;
+    margin: auto;
+  }
+  .side-part {
+    padding: 0px;
+    position: relative;
+  }
+  .btn-1 {
+    position: absolute !important;
+    bottom: 1% !important;
+    left: 10% !important;
+  }
   .upImg {
     padding-left: 10px;
   }
-}
-.thisSummer {
-  padding-top: 32px;
-  padding-left: 15px;
-}
-.thisSummerContent {
-  padding: 10px;
-}
-.h1 {
-  padding-left: 40px;
-  text-align: start;
-}
-.p1 {
-  padding-left: 40px;
-  text-align: start;
-}
-@media (max-width: 992px) {
-  .h1,
+
+  .thisSummer {
+    padding-top: 32px;
+    padding-left: 0px;
+  }
+  .thisSummerContent {
+    padding: 10px;
+  }
+
+  .h1 {
+    padding-left: 20px !important;
+  }
   .p1 {
-    padding-left: 10px;
+    padding-left: 20px !important;
+  }
+  .btn-2-media {
+    padding-left: 30px !important;
+  }
+  .h2 {
+    padding-left: 38px !important;
+    margin-bottom: 0px;
+  }
+  .descImg {
+    padding: 20px !important;
+    padding-left: 35px !important;
+    margin: 0px !important;
+  }
+  .desc1 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .part1 {
+    display: block !important;
+  }
+  .card-row-1 {
+    display: block !important;
+  }
+  .card-row-2 {
+    display: block !important;
   }
 }
-.side-part .btn-1 {
-  position: absolute;
-  top: 90%;
-  left: 25%;
+
+.btn-1 {
+  position: fixed;
+  z-index: 1050;
+  bottom: 5%;
+  left: 5%;
   font-size: 0.8rem;
   line-height: 2.1rem;
   font-weight: bold;
@@ -60,21 +99,108 @@
   border: 1px solid;
   border-radius: 40px;
   text-align: center;
+  max-width: 18rem;
 }
 .btn-1:hover {
   background: hsla(0, 0%, 100%, 0.12);
 }
 .btn-2 {
+  text-decoration: none;
   font-size: 0.8rem;
   line-height: 2.1rem;
   font-weight: bold;
   background-color: transparent;
   color: rgb(0 130 72);
+  padding-left: 16px;
+  padding-right: 16px;
   padding-top: 0px;
   padding-bottom: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
   border: 1px solid;
   border-radius: 40px;
   text-align: center;
+}
+.btn-2:hover {
+  border: 1px solid #008248;
+  background: rgb(212 233 226);
+  color: rgb(0 130 72);
+}
+
+.desc1 {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+.h2 {
+  letter-spacing: 0.1rem;
+  position: relative;
+  text-align: start;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+  font-size: 0.9rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  padding-left: 80px;
+  padding-top: 50px;
+}
+.h1 {
+  padding-left: 80px;
+  text-align: start;
+}
+.p1 {
+  padding-left: 80px;
+  text-align: start;
+}
+.thisSummer {
+  padding-top: 30px;
+}
+.part1 {
+  display: flex;
+}
+.card-row-1 {
+  display: flex;
+}
+.card-row-2 {
+  display: flex;
+}
+.cardimage {
+  width: 100%;
+  height: 100%;
+}
+.entireCardComponent {
+  padding-left: 80px;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+.cardS {
+  padding: 10px;
+}
+.cards {
+  border: none;
+  border-radius: 0px;
+  background: #fff;
+  -webkit-box-shadow: 0 0.2rem 0.8rem 0.1rem hsl(0deg 0% 42% / 11%),
+    0 0.1rem 0.1rem 0 #ccc;
+  box-shadow: 0 0.2rem 0.8rem 0.1rem hsl(0deg 0% 42% / 11%),
+    0 0.1rem 0.1rem 0 #ccc;
+}
+
+.btn-card {
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: rgb(0 130 72);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 1px solid;
+  border-radius: 40px;
+  text-align: center;
+}
+.btn-card:hover {
+  border: 1px solid #008248;
+  background: rgb(212 233 226);
+  color: rgb(0 130 72);
 }
