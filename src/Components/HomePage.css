@@ -75,10 +75,36 @@
     display: block !important;
   }
   .card-row-1 {
+    padding-left: 10px;
     display: block !important;
   }
   .card-row-2 {
+    padding-left: 10px;
     display: block !important;
+  }
+  .entireCardComponent {
+    padding: 10px !important;
+  }
+  .descContent {
+    padding-top: 15px;
+    padding-left: 40px !important;
+    padding-right: 10px !important;
+    padding-bottom: 42px;
+  }
+  .footerPart {
+    padding: 15px !important;
+  }
+  .socialLink {
+    margin: 3px;
+  }
+  .socialMedias {
+    padding-left: 10px;
+  }
+  .horizontal-line {
+    margin-left: 20px;
+  }
+  .footerEnd {
+    margin-left: 10px;
   }
 }
 
@@ -143,6 +169,10 @@
   padding-top: 50px;
 }
 .h1 {
+  font-size: 1.7rem;
+
+  font-weight: 400;
+  margin-bottom: 1rem;
   padding-left: 80px;
   text-align: start;
 }
@@ -170,6 +200,7 @@
   padding-left: 80px;
   padding-top: 30px;
   padding-right: 50px;
+  margin-bottom: 25px;
 }
 .cardS {
   padding: 10px;
@@ -198,9 +229,113 @@
   border: 1px solid;
   border-radius: 40px;
   text-align: center;
+  display: flex;
 }
 .btn-card:hover {
   border: 1px solid #008248;
   background: rgb(212 233 226);
   color: rgb(0 130 72);
+}
+.descContent {
+  padding-left: 80px;
+  padding-right: 30px;
+}
+
+.footerPart {
+  padding: 30px;
+  background-color: white;
+}
+
+/** Accordian **/
+.accordion {
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.active,
+.accordion:hover {
+  background-color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  height: auto;
+  max-height: 0rem;
+  transition: max-height 0.6s ease-out;
+}
+.accordion-img {
+  position: absolute;
+  right: 2%;
+  top: 10%;
+
+  height: 2rem;
+  width: 2rem;
+  transform: rotate(180deg);
+  transition: transform 0.4s;
+}
+.accordion-img:hover {
+  background-color: #edebe9;
+  border-radius: 80%;
+}
+.accordianLinks {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: start;
+  display: grid;
+  padding: 0px;
+}
+
+.horizontal-line {
+  border: 0.1rem solid #ccc;
+}
+.footerPart {
+  padding-left: 80px;
+  padding-right: 60px;
+}
+.socialMedias {
+  display: flex;
+  margin-top: 30px;
+}
+.socialLink {
+  margin: 7px;
+  width: 40px;
+  height: 40px;
+}
+
+.footerEnd {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-left: 10px;
+  padding-top: 30px !important;
+  text-align: start;
+  display: grid;
+}
+.footlink {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #6c6c6c;
+}
+.footlink:hover {
+  color: #1f1f1f;
+}
+.lastFootlink {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+.lastFootlink:hover {
+  color: #6c6c6c;
 }
