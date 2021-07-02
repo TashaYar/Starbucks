@@ -1,0 +1,75 @@
+.find_store_cont {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 10rem);
+}
+.find_store-left {
+  display: flex;
+  flex-direction: row;
+}
+.map_cont {
+  height: auto;
+  min-height: 20em;
+
+  position: relative;
+}
+.map_cont > .mapboxgl-control-container {
+  display: none;
+}
+.findastore {
+  padding-top: 50px;
+  text-align: start;
+  padding-left: 30px;
+}
+.fnsp {
+  color: rgba(0, 0, 0, 0.56);
+}
+.finfil {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -40px;
+}
+.ho-line {
+  margin-top: 30px;
+  width: 500px;
+}
+.filter {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.sistrx {
+  margin-left: 380px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.56);
+}
+.sistrx:hover {
+  color: black;
+}
+.sis {
+  font-size: 1.3rem;
+}
+@media (max-width: 992px) {
+  .find_store_cont {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 10rem);
+  }
+  .ho-line {
+    margin-top: 25px;
+    width: 250px;
+  }
+  .filter {
+    padding-left: 30px;
+  }
+
+  .findastore {
+    padding-left: 20px;
+  }
+  .fnsp {
+    padding-bottom: 0px;
+  }
+  .sistrx {
+    margin-left: 130px;
+  }
+}

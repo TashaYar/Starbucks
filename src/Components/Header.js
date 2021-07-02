@@ -3,34 +3,51 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 import logo from "../starbucks-logo-4.png";
+import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   render() {
     return (
-      <Container fluid>
+      <Container fluid className="border-nav">
         <Navbar expand="lg">
-          <Navbar.Brand href="#home" style={{ marginLeft: "2%" }}>
-            <img src={logo} alt="logo"></img>
+          <Navbar.Brand style={{ marginLeft: "2%", marginTop: "10px" }}>
+            <NavLink to="/">
+              <img src={logo} alt="logo" />
+            </NavLink>
           </Navbar.Brand>
-          <NavbarToggle aria-controls="basic-navbar-nav"></NavbarToggle>
-          <NavbarCollapse>
+          <NavbarToggle aria-controls="basic-navbar-nav" className="menuIcon">
+            <span className="hamicon">
+              {" "}
+              <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50"
+                width="20px"
+                height="20px"
+              >
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" />
+              </svg>
+            </span>
+          </NavbarToggle>
+          <NavbarCollapse className="navbar-collapse">
             {" "}
             <Nav className="primary-navigation">
-              <Nav.Link href="#home" className="navLink1">
-                <span style={{ color: "black" }}> Menu</span>
-              </Nav.Link>
-              <Nav.Link href="#home" className="navLink1">
-                <span style={{ color: "black" }}>Nutrition</span>
-              </Nav.Link>
-              <Nav.Link href="#home" className="navLink1">
-                <span style={{ color: "black" }}> Delivers </span>
-              </Nav.Link>
-              <Nav.Link href="#home" className="navLink1">
-                <span style={{ color: "black" }}>Rewards</span>
-              </Nav.Link>
+              <NavLink to="/menu" className="navLink1">
+                <span> Menu</span>
+              </NavLink>
+
+              <NavLink to="/nutrition" className="navLink1">
+                <span>Nutrition</span>
+              </NavLink>
+              <NavLink to="/delivers" className="navLink1">
+                <span> Delivers </span>
+              </NavLink>
+              <NavLink to="/rewards" className="navLink1">
+                <span>Rewards</span>
+              </NavLink>
             </Nav>
             <Nav className="secondary-navigation">
-              <Nav.Link href="#home" className="navLink">
+              <NavLink to="/find_store" className="navLink">
                 <i
                   className="fas fa-map-marker-alt fa-2x"
                   style={{
@@ -38,18 +55,16 @@ class Header extends Component {
                     color: "black",
                   }}
                 ></i>
-                <span style={{ color: "black" }}>Find a store</span>
-              </Nav.Link>
-              <Nav.Link href="#AboutUs" className="navLink">
-                <span className="sign-in-button" style={{ color: "black" }}>
-                  Sign in
-                </span>
-              </Nav.Link>
-              <Nav.Link href="#AboutUs" className="navLink">
+                <span>Find a store</span>
+              </NavLink>
+              <NavLink to="/sign-in" className="navLink">
+                <span className="sign-in-button">Sign in</span>
+              </NavLink>
+              <NavLink to="/sign_up" className="navLink">
                 <span className="join-button" style={{ color: "white" }}>
                   Join now
                 </span>
-              </Nav.Link>
+              </NavLink>
             </Nav>
           </NavbarCollapse>
         </Navbar>

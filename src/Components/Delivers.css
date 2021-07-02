@@ -1,0 +1,141 @@
+.side-part3 {
+  padding: 0px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.sideImg3 {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 109vh;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.upImg3 {
+  height: auto;
+  width: 100%;
+}
+.sideDeliver {
+  padding: 0px;
+  margin-left: 33.1%;
+  background-color: rgb(247 247 247);
+}
+.div-3 {
+  display: flex;
+  margin-top: 700px;
+  z-index: 1;
+  width: 659.375px;
+  height: auto;
+  left: 65px;
+  padding-left: calc(2.16667% + 0.01667rem);
+  padding-right: calc(8.16667% + 0.01667rem);
+  position: fixed;
+}
+.text-3 {
+  color: white;
+  text-align: start;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.deliversecondpart {
+  padding-left: 80px;
+  padding-bottom: 30px;
+  padding-right: 65px;
+}
+.starbuckrundeliver {
+  padding-top: 0px;
+  padding-right: 50px;
+}
+.desc3 {
+  width: 100%;
+  height: auto;
+}
+.descImg3 {
+  padding-left: 90px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+}
+.findoutmore {
+  padding-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.delivrp {
+  text-align: start;
+  padding-left: 80px;
+  color: #6c6c6c;
+  font-size: 1.1rem;
+}
+
+.p1-del {
+  text-align: start;
+  padding-left: 80px;
+  color: #6c6c6c;
+  font-size: 1.1rem;
+}
+.h1-del {
+  padding-left: 80px;
+  display: flex;
+}
+.h-3 {
+  position: relative;
+  text-align: start;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+  font-size: 0.9rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  .sideImg3 {
+    min-height: 60vh;
+  }
+  .div-3 {
+    position: absolute;
+    display: flex;
+    margin-top: 318px;
+    z-index: 1;
+    margin-left: -41px;
+    left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .text-3 {
+    padding-left: 70px;
+    padding-right: 5px;
+    padding-bottom: 40px;
+  }
+  .deliversecondpart {
+    padding-left: 30px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+  }
+  .h1-del {
+    padding-left: 40px;
+
+    text-align: start;
+  }
+  .p1-del {
+    padding-left: 40px;
+    font-size: 0.9rem;
+  }
+  .starbuckrundeliver {
+    padding-top: 30px;
+  }
+  .findoutmore {
+    padding-left: 40px;
+  }
+  .delivrp {
+    padding-left: 35px;
+    padding-right: 10px;
+    font-size: 1rem;
+  }
+  .descImg3 {
+    padding-left: 33px;
+    padding-right: 20px;
+    padding-bottom: 23px;
+    padding-top: 0px;
+  }
+}

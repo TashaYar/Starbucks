@@ -1,0 +1,167 @@
+.side-part2 {
+  top: 0;
+  padding: 0px;
+  position: fixed;
+  left: 0;
+}
+.sideImg2 {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 109vh;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.div-1 {
+  display: flex;
+  margin-top: 700px;
+
+  width: 659.375px;
+  height: auto;
+  left: 65px;
+  padding-left: calc(2.16667% + 0.01667rem);
+  padding-right: calc(8.16667% + 0.01667rem);
+  position: fixed;
+}
+.text-1 {
+  color: white;
+  text-align: start;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.upImg2 {
+  height: auto;
+  width: 100%;
+}
+.desc2 {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+.sideNutrition {
+  padding: 0px;
+  margin-left: 33.1%;
+  background-color: rgb(247 247 247);
+}
+.nutritionsecondpart {
+  padding-left: 80px;
+  padding-bottom: 80px;
+  padding-right: 65px;
+}
+.upimgclass {
+  padding-left: 80px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  padding-right: 50px;
+}
+.buttonNutrition {
+  display: flex;
+  flex-direction: row;
+}
+.descContent2 {
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-left: 30px;
+}
+.info1,
+.info2,
+.info3,
+.info4,
+.info5 {
+  text-align: start;
+  padding-bottom: 50px;
+}
+.info {
+  padding-left: 80px;
+  padding-right: 200px;
+}
+.infoP {
+  color: #6c6c6c;
+  font-size: 1.1rem;
+}
+.btn-nut {
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: rgb(0 130 72);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 1px solid;
+  border-radius: 40px;
+  text-align: center;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .sideImg2 {
+    min-height: 65vh !important;
+    height: 400px;
+  }
+  .nutritionsecondpart {
+    padding-left: 30px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+  }
+  .div-1 {
+    position: absolute;
+
+    margin-top: 270px;
+
+    width: 659.375px;
+    height: auto;
+    left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .text-1 {
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 10px;
+  }
+  .upimgclass {
+    padding-left: 20px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+  }
+  .descContent2 {
+    padding: 30px;
+    padding-right: 10px;
+    padding-top: 0px;
+  }
+  .info {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .info1 {
+    padding-bottom: 50px;
+  }
+  .info2 {
+    padding-bottom: 50px;
+  }
+  .info3 {
+    padding-bottom: 50px;
+  }
+  .info4 {
+    padding-bottom: 50px;
+  }
+  .info5 {
+    padding-bottom: 50px;
+  }
+  .buttonNutrition {
+    display: block;
+    margin-left: -20px;
+  }
+  .btn-nut {
+    margin: 20px;
+  }
+  .infoP {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

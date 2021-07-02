@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 .Main {
   color: white;
 }
@@ -21,28 +16,40 @@ img {
   height: 50px;
   width: auto;
 }
-
+.border-nav {
+  position: relative;
+  height: 5.5rem;
+  box-shadow: 2px 2px 2px 0px #dcdcdc;
+  -webkit-box-shadow: 2px 2px 2px 0px #dcdcdc;
+  -moz-box-shadow: 2px 2px 2px 0px #dcdcdc;
+}
 .primary-navigation {
   display: flex;
+  align-items: center;
+  padding-top: 20px;
   align-items: center;
 }
 .secondary-navigation {
   display: flex;
   align-items: center;
   margin-left: auto;
+  padding-top: 20px;
   padding-right: 70px;
 }
 
 .navLink1 {
   justify-content: center;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  position: relative;
-  display: flex;
+  letter-spacing: 0.1rem !important;
+  position: relative !important;
+  color: inherit;
+  display: flex !important;
   transition: color 0.2s ease-in-out;
-  font-size: 0.9rem;
-  line-height: 2.1rem;
+  font-size: 0.8rem !important;
+  line-height: 2.1rem !important;
   font-weight: bold;
+  text-decoration: none !important;
+  margin-inline: 0.6em;
 }
 
 .navLink {
@@ -53,8 +60,11 @@ img {
   align-items: center;
   transition: color 0.2s ease-in-out;
   font-size: 0.8rem;
-
+  text-decoration: none;
+  margin-inline: 0.5em;
+  margin-block: 0.2em;
   font-weight: bold;
+  color: inherit;
 }
 
 .sign-in-button {
@@ -74,6 +84,9 @@ img {
   border-radius: 40px;
 }
 
+.sign-in-button:active {
+  transform: translate(4p 4px 4px);
+}
 .join-button {
   background-color: black;
   color: white;
@@ -90,8 +103,60 @@ img {
   text-decoration: none !important;
   border-radius: 40px;
 }
+
+.navLink1.active::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: #00653e;
+  display: flex;
+  position: absolute;
+  bottom: -66%;
+}
+.navLink1:hover {
+  color: #00653e !important;
+}
+.navLink:hover {
+  opacity: 0.6;
+  color: initial;
+}
+.menuIcon {
+  border: none;
+  border-radius: 60%;
+}
+.hamicon {
+  transform: rotate(180deg);
+  transition: transform 0.4s;
+}
+.menuIcon:hover {
+  background-color: #edebe9;
+
+  border: none;
+  padding: 10px;
+}
 @media (max-width: 992px) {
+  .Navbar {
+    padding-top: 0px;
+  }
+  .navbar {
+    padding-top: 0px;
+  }
   .secondary-navigation {
     padding-right: 0;
+  }
+  .div-1 {
+    position: absolute;
+  }
+  .navLink1.active::after {
+    height: 0px;
+  }
+  .border-nav {
+    height: 4rem;
+  }
+  .navbar-collapse {
+    z-index: 1;
+    background-color: white;
+    margin-left: 60px;
+    margin-right: -14px;
   }
 }

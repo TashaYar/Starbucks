@@ -1,0 +1,115 @@
+@media (max-width: 992px) {
+  .footerPart {
+    padding: 15px !important;
+  }
+  .socialLink {
+    margin: 3px;
+  }
+  .socialMedias {
+    padding-left: 10px;
+  }
+  .horizontal-line {
+    margin-left: 20px;
+  }
+  .footerEnd {
+    margin-left: 10px;
+  }
+}
+.footerPart {
+  padding: 30px;
+  background-color: white;
+}
+
+/** Accordian **/
+.accordion {
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.active,
+.accordion:hover {
+  background-color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  height: auto;
+  max-height: 0rem;
+  transition: max-height 0.6s ease-out;
+}
+.accordion-img {
+  position: absolute;
+  right: 2%;
+  top: 10%;
+
+  height: 2rem;
+  width: 2rem;
+  transform: rotate(180deg);
+  transition: transform 0.4s;
+}
+.accordion-img:hover {
+  background-color: #edebe9;
+  border-radius: 80%;
+}
+.accordianLinks {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: start;
+  display: grid;
+  padding: 0px;
+}
+
+.horizontal-line {
+  border: 0.1rem solid #ccc;
+}
+.footerPart {
+  padding-left: 80px;
+  padding-right: 60px;
+}
+.socialMedias {
+  display: flex;
+  margin-top: 30px;
+}
+.socialLink {
+  margin: 7px;
+  width: 40px;
+  height: 40px;
+}
+
+.footerEnd {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-left: 10px;
+  padding-top: 30px !important;
+  text-align: start;
+  display: grid;
+}
+.footlink {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #6c6c6c;
+}
+.footlink:hover {
+  color: #1f1f1f;
+}
+.lastFootlink {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+.lastFootlink:hover {
+  color: #6c6c6c;
+}
