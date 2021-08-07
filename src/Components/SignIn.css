@@ -1,0 +1,93 @@
+.sign-in-create {
+  top: 0;
+  padding: 0px;
+  box-shadow: 2px 2px 2px 0px #dcdcdc;
+  -webkit-box-shadow: 2px 2px 2px 0px #dcdcdc;
+  -moz-box-shadow: 2px 2px 2px 0px #dcdcdc;
+  left: 0;
+
+  height: auto;
+  min-height: 109vh;
+}
+
+.createStar > p {
+  margin-top: 400px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.015rem;
+  font-family: SoDoSans, sans-serif;
+  word-spacing: -3px;
+}
+.formsDiv {
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: start;
+}
+.emailEnter {
+  border: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  padding-left: 0px;
+  box-shadow: none;
+  outline: none;
+}
+.emailEnter:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #008248;
+}
+.passEnter {
+  padding-left: 0px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+}
+.passEnter:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #008248;
+}
+.formBasicEmail {
+  padding-bottom: 20px;
+}
+.formBasicPassword {
+  display: flex;
+  flex-direction: row;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+}
+.formBasicPassword:focus-within {
+  border-color: #00a862;
+}
+.SubmitButton {
+  padding-left: 400px;
+}
+.checkBox {
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border-color: green;
+  opacity: 1;
+}
+
+.labelCheck {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.detailsp {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.visibleIcon {
+  background-color: transparent;
+  border-color: transparent;
+}
+.visIcon {
+  width: 25px;
+  height: 25px;
+}

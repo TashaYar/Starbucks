@@ -1,10 +1,12 @@
 body {
-  margin: 0;
+  font-size: 15px;
 
+  margin: 0;
+  font-family: "SoDosans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: SoDoSans, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
