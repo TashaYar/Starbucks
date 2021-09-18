@@ -42,19 +42,9 @@ export class HomePage extends Component {
             className="col-12 col-md-4 side-part"
             style={{
               position: this.state.visibleNav ? "relative" : "fixed",
-              transform: this.state.visibleNav ? "" : "translate(-8px,-80px)",
+              transform: this.state.visibleNav ? "" : "translate(0px,0px)",
             }}
-          >
-            <img
-              alt="sideImage"
-              src={sideImg}
-              className="sideImg"
-              style={{
-                position: "relative",
-                width: this.state.visibleNav ? "" : "100%",
-              }}
-            />
-          </Col>
+          ></Col>
           <Link
             type="button"
             to="/menu"

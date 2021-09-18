@@ -23,7 +23,8 @@
   margin-left: 33.1%;
   background-color: rgb(247 247 247);
 }
-
+@media (max-width: 1000px) {
+}
 @media (max-width: 992px) {
   .secondSide {
     padding: 0px;
@@ -39,7 +40,7 @@
     left: 10% !important;
   }
   .upImg {
-    padding-left: 10px;
+    padding-left: 0px;
   }
 
   .thisSummer {
